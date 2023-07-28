@@ -18,7 +18,7 @@
 
         cursor: pointer;
         transform: scale(1.1);
-        
+
     }
 
     &-description {
@@ -117,10 +117,11 @@
     color: $--text-color-lighter;
     transition: 200ms transform;
 
-    &:hover{
+    &:hover {
         transform: scale(0.8);
         cursor: pointer;
     }
+
     &-description {
 
         position: absolute;
@@ -198,7 +199,7 @@
         position: absolute;
         bottom: 0;
         padding-top: 10px;
-        
+
     }
 
     &__Reversed {
@@ -261,4 +262,65 @@
         }
 
     }
+}
+
+.ProductMin {
+
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin-bottom: 10px;
+    transition: 300ms all;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1) translateX(20px);
+        
+    }
+    
+    &-image {
+        width: 80px;
+        height: 100%;
+        flex-shrink: 0;
+        flex-grow: 0;
+        object-fit: cover;
+    }
+
+    &__Details {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: $--text-color;
+        padding-left: 30px;
+        border: 2px solid $--btn-hover;
+        border-radius: 0px 5px 5px 0px;
+        
+        &-name {
+            width: max-content;
+            height: max-content;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        &-price {
+            width: max-content;
+            height: max-content;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        &-code {
+            font-size: 10px;
+            height: max-content;
+            margin-bottom: auto;
+        }
+
+        &__Rate {
+            height: max-content;
+            font-size: 9px;
+            margin-bottom: 3px;
+        }
+    }
+
 }
