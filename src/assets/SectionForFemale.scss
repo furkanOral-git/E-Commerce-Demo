@@ -1,0 +1,81 @@
+@import "./Variables.scss";
+
+.App__Section__SectionForFemale {
+
+    height: 800px;
+    width: inherit;
+    position: relative;
+    margin-bottom: 25.7px;
+
+
+    &-products {
+
+        width: inherit;
+        height: inherit;
+        background-image: url("src/assets/imgs/ForFemaleBg.jpg");
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+        display: flex;
+
+        .Product {
+
+            transform: scale(0.9);
+            position: absolute;
+            right: 0;
+            margin: 0px;
+            font-weight: bold;
+            transition: 200ms transform;
+            &:hover{
+                transform: scale(1);
+            }
+
+            &:first-child {
+                bottom: 10em;
+                left: 1.6em;
+            }
+
+            &:nth-child(2) {
+                left: 19.7em;
+                bottom: 1em;
+            }
+
+            &:nth-child(3) {
+                top: 9em;
+                left: 37.9em;
+            }
+
+            &:nth-child(4) {
+                right: 21.6em;
+                bottom: 1em;
+            }
+
+            &:nth-child(5) {
+                bottom: 10em;
+                right: 2em;
+            }
+
+        }
+    }
+
+    &-btn {
+
+        width: 12em;
+        padding: 5px;
+        height: 40px;
+        background-color: #545B77;
+        position: absolute;
+        left: 42.4%;
+        top: 15px;
+        color: $--text-color-lighter;
+        z-index: 1;
+
+        &:hover {
+            color: #545B77;
+        }
+
+    }
+
+
+
+}

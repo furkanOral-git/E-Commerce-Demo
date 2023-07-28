@@ -1,0 +1,264 @@
+@import "./Variables.scss";
+
+.Product {
+
+    width: 200px;
+    margin: 0px 0px 35px 25px;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: transparent;
+    position: relative;
+    transition: 200ms transform;
+
+    &:hover {
+
+        cursor: pointer;
+        transform: scale(1.1);
+        
+    }
+
+    &-description {
+
+        width: 200px;
+        height: 55px;
+        font-weight: 400;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px;
+        margin-top: 30px;
+        text-align: start;
+        text-indent: 5px;
+        flex-shrink: 0;
+    }
+
+    &-price {
+        font-size: 16px;
+        font-weight: 400;
+        width: inherit;
+        text-align: start;
+    }
+
+    &-name {
+        padding: 20px 25px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        height: 40px;
+        width: 200px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    &-imageCount {
+        position: absolute;
+        height: max-content;
+        width: max-content;
+        right: 50%;
+        top: 77%;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    &__Image {
+
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        margin-right: 7px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        transition: 200ms all;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        &--active {
+
+            flex-shrink: 0;
+            flex-grow: 0;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        &:hover {
+
+            cursor: pointer;
+            opacity: 0.2;
+
+        }
+    }
+
+    &__SmallImages {
+
+        width: 200px;
+        height: 50px;
+        display: flex;
+        margin-top: 20px;
+
+
+    }
+}
+
+.ProductV2 {
+
+    transform: scale(0.7);
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: relative;
+    color: $--text-color-lighter;
+    transition: 200ms transform;
+
+    &:hover{
+        transform: scale(0.8);
+        cursor: pointer;
+    }
+    &-description {
+
+        position: absolute;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 18px;
+        text-align: start;
+        padding: 10px;
+        height: max-content;
+        width: 270px;
+        left: 60%;
+        top: 20%;
+
+    }
+
+    &-price {
+
+        position: absolute;
+        width: 250px;
+        height: max-content;
+        font-size: 30px;
+        font-weight: bolder;
+        padding: 10px;
+        bottom: 0px;
+        left: 60%;
+
+
+    }
+
+    &-name {
+        position: absolute;
+        height: max-content;
+        width: max-content;
+        padding: 10px;
+        font-weight: 800;
+        font-size: 25px;
+        left: 60%;
+        text-align: left;
+
+
+    }
+
+    &__Image {
+
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        flex-shrink: 0;
+        flex-grow: 0;
+        transition: 200ms all;
+
+        &--active {
+
+            flex-shrink: 0;
+            flex-grow: 0;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        &:hover {
+
+            cursor: pointer;
+            opacity: 0.2;
+
+        }
+    }
+
+    &__SmallImages {
+
+        width: 200px;
+        height: 50px;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        padding-top: 10px;
+        
+    }
+
+    &__Reversed {
+
+        transform: scale(0.7);
+        width: 400px;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        position: relative;
+        color: $--text-color-lighter;
+
+        .ProductV2__Image--active {
+
+            position: absolute;
+            right: 0;
+        }
+
+        &-name {
+            font-weight: 800;
+            font-size: 25px;
+            right: 84%;
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            padding: 10px;
+
+        }
+
+        &-description {
+
+            position: absolute;
+            font-weight: 600;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 18px;
+            text-align: start;
+            padding: 10px;
+            height: max-content;
+            width: 270px;
+            right: 60%;
+            top: 20%;
+        }
+
+        &-price {
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            bottom: 0;
+            right: 88%;
+            font-size: 30px;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+
+        .ProductV2__SmallImages {
+            right: 0;
+        }
+
+    }
+}

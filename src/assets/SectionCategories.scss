@@ -1,0 +1,214 @@
+@import "./Variables.scss";
+
+.material-symbols-outlined {
+    color: #C1C1C1;;
+
+    &:hover {
+        cursor: pointer;
+        color: $--page-color;
+    }
+}
+
+.App__Section__Categories {
+    height: 800px;
+    width: inherit;
+    margin-top: 20px;
+    display: flex;
+
+    &__Showcase {
+
+        width: 100%;
+        height: 100%;
+        padding-left: 65px;
+
+        &-products {
+
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .Product {
+                transform: scale(0.9);
+                margin-bottom: 0;
+                transition: 300ms transform;
+
+                &:hover {
+                    transform: scale((0.87));
+                }
+            }
+        }
+
+        &__Tools {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 20px;
+            justify-content: flex-start;
+
+            position: relative;
+
+            &-searchResult {
+                font-size: 10px;
+                font-weight: 300;
+                width: 500px;
+                flex-shrink: 0;
+                flex-grow: 0;
+                margin-top: 8px;
+            }
+
+            &-filter {
+                width: max-content;
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+
+                &::before {
+                    content: "Aradığın ürünleri filtrele";
+                    font-family: 'Montserrat';
+                    font-size: 10px;
+                    display: block;
+                    margin-right: 5px;
+                }
+
+            }
+
+            .navigation {
+                display: flex;
+                width: 150px;
+                height: 100%;
+                flex-shrink: 0;
+                flex-grow: 0;
+
+                .material-symbols-outlined {
+
+                    
+                    width: max-content;
+                    height: max-content;
+                    background-color: transparent;
+                }
+
+                &-active {
+                    font-size: 10px;
+                    text-align: center;
+                    padding: 5px;
+                    width: 100%;
+                    
+                    &::after {
+                        content: "sayfa";
+                        margin-left: 5px;
+                    }
+                }
+
+            }
+
+        }
+
+        &-title {
+            font-weight: 500;
+            font-size: 22px;
+            width: 100%;
+            height: 45px;
+            position: relative;
+
+            &::before {
+
+                content: "";
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background-color: #C1C1C1;
+                right: 0;
+                top: 50%;
+                z-index: 0;
+            }
+
+            span {
+                width: max-content;
+                height: max-content;
+                background-color: $--background-color;
+                position: absolute;
+                top: 25%;
+                z-index: 1;
+                padding-right: 25px;
+
+            }
+        }
+    }
+
+
+    &__SideBar {
+
+        border: 1px solid #A19F9B;
+        width: 175px;
+        height: inherit;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 3% 0px;
+
+
+        &__Container {
+
+            margin-top: 10px;
+            width: inherit;
+            height: 35%;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        &-category {
+
+            flex-shrink: 0;
+            flex-grow: 0;
+            background-color: transparent;
+            width: inherit;
+            height: max-content;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            &:first-child {
+                margin-top: 10px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                color: $--page-color;
+            }
+        }
+
+        &-title {
+
+            position: relative;
+            width: inherit;
+            background-color: transparent;
+            height: max-content;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 30px;
+
+            &::before {
+
+                content: "";
+                display: block;
+                position: absolute;
+                width: 90%;
+                bottom: -4px;
+                left: 0;
+                height: 2px;
+                background-color: #C1C1C1;
+            }
+        }
+
+
+    }
+}

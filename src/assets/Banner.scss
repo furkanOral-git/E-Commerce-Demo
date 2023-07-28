@@ -1,0 +1,65 @@
+@import "./Variables.scss";
+@import "./Button.scss";
+
+.App__Banner {
+    width: inherit;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    
+    &__Item {
+
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        background-color: transparent;
+        
+        &:last-child {
+            align-items: flex-end;
+        }
+
+        span {
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            z-index: 1;
+            background-color: transparent;
+            color: #ffffff;
+            margin: 0px 50px
+        }
+
+        &-img {
+
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            z-index: 0;
+            object-fit: cover;
+        }
+
+        &-title {
+
+            font-size: 25px;
+            font-weight: 800;
+            top: 65px;
+        }
+
+        &-message {
+            font-size: 20px;
+            font-weight: 800;
+            top: 100px;
+        }
+
+        &-btn {
+
+            position: absolute;
+            z-index: 1;
+            bottom: 25px;
+            margin: 0px 50px;
+        }
+
+    }
+}

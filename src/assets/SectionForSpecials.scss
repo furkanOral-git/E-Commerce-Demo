@@ -1,0 +1,75 @@
+@import "./Variables.scss";
+
+.App__Section__Specials {
+
+    width: inherit;
+    height: 819px;
+    background-image: url("./imgs/SpecialForYou-bg.jpg");
+    object-fit: cover;
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 8px;
+    border: 1px solid #aeacac;
+
+    .Btn__Special {
+        font-size: 16px;
+        font-weight: 400;
+        height: 40px;
+        width: 200px;
+        color: $--text-color-lighter;
+        border: none;
+        transition: 300ms all;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(0.9);
+            background-color: #ececec;
+            color: $--text-color;
+        }
+    }
+
+    &-Left {
+        height: inherit;
+        background-color: transparent;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+
+    }
+
+    &__LeftBtn {
+
+        position: absolute;
+        top: 15px;
+        left: 34%;
+        background-color: #8282BF;
+
+
+    }
+
+    &__RightBtn {
+
+        right: 35%;
+        position: absolute;
+        top: 15px;
+        background-color: #FF414D;
+    }
+
+    &-Right {
+
+        width: 50%;
+        height: inherit;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+
+    }
+
+
+}

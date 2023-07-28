@@ -1,0 +1,75 @@
+@import "./Variables.scss";
+
+.App__Navigation__Search {
+
+    width: max-content;
+    height: max-content;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+
+
+    &-window {
+
+        position: absolute;
+        width: inherit;
+        height: 400px;
+        flex-shrink: 0;
+        z-index: 2;
+
+    }
+
+
+    &-input {
+        color: $--text-color;
+        font-weight: 500;
+        width: 460px;
+        height: 29px;
+        border: 2px $--btn-hover solid;
+        border-radius: 5px;
+        padding: 5px;
+        text-indent: 25px;
+        font-size: 12px;
+        transition: 300ms all;
+
+
+        &:focus {
+            border-color: $--input-hover ;
+
+            &+a {
+                color: $--input-hover;
+            }
+        }
+
+        &::placeholder {
+            font-size: 12px;
+            text-indent: 25px;
+            color: #8F8F8F;
+            font-weight: 300;
+        }
+
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            display: none;
+        }
+
+    }
+
+    a {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        border-radius: 5px;
+        left: 6px;
+        top: 12%;
+        z-index: 0;
+        color: $--btn-hover;
+        transition: 300ms all;
+
+
+    }
+}

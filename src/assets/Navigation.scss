@@ -1,0 +1,53 @@
+@import "./Button.scss";
+@import "./Search.scss";
+
+.App__Navigation {
+
+    width: 100%;
+    height: 171px;
+    display: flex;
+    padding: 35px 47px 35px 44px;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+
+    &__Logo {
+
+        width: max-content;
+        height: max-content;
+        margin-top: 5px;
+        margin-right: auto;
+        padding: 0px;
+
+        .Logo {
+            width: 116px;
+            height: 117px;
+        }
+    }
+
+
+
+
+    &__Item {
+
+        height: max-content;
+        width: max-content;
+        padding: 0px 10px;
+        color: $--text-color;
+        font-size: 15px;
+        color: $--text-color;
+
+        .btn {
+
+            padding: 5px;
+            margin: 0px;
+            font-weight: 500;
+
+
+        }
+
+    }
+
+
+
+}
