@@ -51,4 +51,11 @@ export function ProductV2({ productJson, reversed = false }) {
 
     )
 }
+export function ProductMin(){
+    return (
+        <div className="Product">
+            
+        </div>
+    )
+}
 
