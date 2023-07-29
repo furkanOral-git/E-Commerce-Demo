@@ -54,13 +54,13 @@ export function ProductV2({ productJson, reversed = false }) {
 export function ProductMin({ productJson }) {
     return (
         <div className="ProductMin">
-            <img src={productJson.imageUrls[3]} className="ProductMin-image" />
+            <img src={productJson?.imageUrls[3]} className="ProductMin-image" />
             <div className="ProductMin__Details">
-                <span className="ProductMin__Details-name">{productJson.name}</span>
+                <span className="ProductMin__Details-name">{productJson?.name}</span>
                 <span className="ProductMin__Details-code">(0001101)</span>
-                <span className="ProductMin__Details-price">{productJson.price} TL</span>
+                <span className="ProductMin__Details-price">{productJson?.price} TL</span>
                 <div className="ProductMin__Details__Rate">
-                    {!productJson.rate && <span>Ürün değerlendirmesi yok</span>}
+                    {!productJson?.rate && <span>Ürün değerlendirmesi yok</span>}
                 </div>
             </div>
         </div>

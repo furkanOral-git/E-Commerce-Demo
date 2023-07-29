@@ -8,36 +8,25 @@ import SectionForFemale from './components/SectionForFemale.jsx';
 import SectionForSpecials from './components/SectionForSpecials.jsx';
 import SectionCategories from './components/SectionCategories';
 import SectionTheBestSellers from './components/SectionTheBestSellers';
-import { RequestService } from './services/service';
+import SectionCollage from './components/SectionCollage';
+
 import { notificationMessages, navTitles, upBannerContent } from "./datas/datas.js"
 import { useEffect, useState } from 'react';
 import { useDataStore } from "./components/States"
 
-//lazy loading yapılacak!!
+
 
 function App() {
 
-  const { categories, products, campaigns, fetch } = useDataStore()
+  const { fetch } = useDataStore()
 
   useEffect(() => {
 
     fetch()
 
-    // const fetch = async () => {
-
-    //   const categoriesFetched = await RequestService.prototype.getCategories();
-    //   const campaignsFetched = await RequestService.prototype.getCampaigns();
-    //   const productsFetched = await RequestService.prototype.getProducts();
-    //   setCategoriesData(categoriesFetched)
-    //   setCampaignsData(campaignsFetched)
-    //   setProductsData(productsFetched)
-
-    // }
-    // fetch()
-
   }, [])
 
-  // useEffect(() => , [productsData, categoriesData, campaignsData])
+
 
   return (
     <>
@@ -53,6 +42,8 @@ function App() {
       <SectionTitle properties={{ title: "EN ÇOK SATILANLAR", reverse: true, underline: false }} />
       <SectionTheBestSellers />
       <SectionCategories />
+      <SectionTitle properties={{ title: "SİZDEN GELENLER", reverse: false, underline: false }} />
+      <SectionCollage />
     </>
   )
 }

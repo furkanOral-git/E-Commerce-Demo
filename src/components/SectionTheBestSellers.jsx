@@ -30,6 +30,7 @@ function SectionTheBestSellers() {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: true,
+        swipeToSlide: true,
     }
 
     return (

@@ -1,0 +1,130 @@
+@import "./Variables.scss";
+
+.App__Section__Collage {
+
+    width: 100%;
+    height: 580px;
+    margin-top: 15px;
+    
+
+
+    &__Item {
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__Container {
+
+            position: relative;
+            
+            .Container__Background {
+                object-fit: cover;
+                position: absolute;
+                z-index: 1;
+                opacity: 0.9;
+            }
+
+            .Container__Consumer {
+                position: absolute;
+                z-index: 2;
+                background-color: transparent;
+                width: 100%;
+                height: max-content;
+                max-height: 35%;
+                bottom: 0;
+                background-color: $--collage-dark-bg;
+                color: $--text-color-lighter;
+                opacity: 0.7;
+                padding: 9px;
+                overflow: auto;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                &-name {
+                    font-size: 12px;
+
+                }
+
+                &-commit {
+                    margin-top: 5px;
+                    font-size: 9px;
+                    text-indent: 15px;
+
+                }
+            }
+
+            .ProductMin {
+                margin-top: 5px;
+                margin-left: 5px;
+                position: absolute;
+                z-index: 2;
+                background-color: transparent;
+                width: max-content;
+                height: 45px;
+
+                &-image {
+                    width: 45px;
+                    height: 45px;
+
+                }
+
+                &__Details {
+
+                    border: none;
+                    color: $--text-color-collage;
+                    padding-left: 4px;
+
+                    &-name {
+                        font-size: 7px;
+                    }
+
+                    &-price {
+                        font-size: 7px;
+                    }
+
+                    &__Rate {
+                        font-size: 6px;
+                    }
+                }
+
+                &:hover {
+                    transform: none;
+
+                }
+            }
+
+            &-1 {
+                width: 290px;
+                height: 290px;
+            }
+
+            &-2 {
+                width: 430px;
+                height: 290px;
+            }
+
+            &-3 {
+                width: 430px;
+                height: 290px;
+            }
+
+            &-4 {
+                width: 290px;
+                height: 290px;
+            }
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+}

@@ -1,7 +1,8 @@
 @import "./Variables.scss";
 
 .material-symbols-outlined {
-    color: #C1C1C1;;
+    color: #C1C1C1;
+    ;
 
     &:hover {
         cursor: pointer;
@@ -10,16 +11,17 @@
 }
 
 .App__Section__Categories {
-    height: 800px;
+    height: max-content;
     width: inherit;
     margin-top: 20px;
+    margin-bottom: 120px;
     display: flex;
 
     &__Showcase {
 
         width: 100%;
         height: 100%;
-        padding-left: 65px;
+        padding-left: 45px;
 
         &-products {
 
@@ -28,6 +30,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            
 
             .Product {
                 transform: scale(0.9);
@@ -41,26 +44,26 @@
         }
 
         &__Tools {
+
             display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
             width: 100%;
             height: 20px;
-            justify-content: flex-start;
+            justify-content: space-between;
 
             position: relative;
 
             &-searchResult {
                 font-size: 10px;
                 font-weight: 300;
-                width: 500px;
-                flex-shrink: 0;
-                flex-grow: 0;
+                width: max-content;
+                
                 margin-top: 8px;
             }
 
             &-filter {
                 width: max-content;
-                margin-left: auto;
                 display: flex;
                 align-items: center;
 
@@ -74,16 +77,17 @@
 
             }
 
+           
+
             .navigation {
                 display: flex;
-                width: 150px;
+                width: max-content;
                 height: 100%;
-                flex-shrink: 0;
-                flex-grow: 0;
+
 
                 .material-symbols-outlined {
 
-                    
+
                     width: max-content;
                     height: max-content;
                     background-color: transparent;
@@ -94,7 +98,8 @@
                     text-align: center;
                     padding: 5px;
                     width: 100%;
-                    
+                    margin: 0 10px;
+
                     &::after {
                         content: "sayfa";
                         margin-left: 5px;
@@ -142,14 +147,15 @@
     &__SideBar {
 
         border: 1px solid #A19F9B;
-        width: 175px;
-        height: inherit;
+        width: 225px;
+        height: 700px;
         border-radius: 10px;
         position: relative;
         display: flex;
         flex-direction: column;
         padding: 3% 0px;
-
+        
+        
 
         &__Container {
 
@@ -173,7 +179,8 @@
             text-align: center;
             font-size: 13px;
             font-weight: 500;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            
 
             &:first-child {
                 margin-top: 10px;
