@@ -4,8 +4,8 @@
 
     width: 100%;
     height: 580px;
-    margin-top: 15px;
-    
+    margin-top: 15x;
+    margin-bottom: 25px;
 
 
     &__Item {
@@ -13,11 +13,12 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-
+        background-color: $--collage-color;
         &__Container {
 
             position: relative;
-            
+            transform: scale(0.98);
+
             .Container__Background {
                 object-fit: cover;
                 position: absolute;

@@ -1,4 +1,5 @@
 import './App.scss'
+
 import Navigation from './components/Navigation.jsx'
 import Banner from './components/Banner.jsx'
 import Flag from "./components/Flag.jsx"
@@ -9,9 +10,10 @@ import SectionForSpecials from './components/SectionForSpecials.jsx';
 import SectionCategories from './components/SectionCategories';
 import SectionTheBestSellers from './components/SectionTheBestSellers';
 import SectionCollage from './components/SectionCollage';
+import Footer from './components/Footer';
 
 import { notificationMessages, navTitles, upBannerContent } from "./datas/datas.js"
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDataStore } from "./components/States"
 
 
@@ -44,6 +46,7 @@ function App() {
       <SectionCategories />
       <SectionTitle properties={{ title: "SİZDEN GELENLER", reverse: false, underline: false }} />
       <SectionCollage />
+      <Footer />
     </>
   )
 }

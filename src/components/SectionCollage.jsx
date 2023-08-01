@@ -15,6 +15,7 @@ export default function SectionCollage() {
         slidesToScroll: 1,
         speed: 4000,
         infinite: true,
+        swipeToSlide: true,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
